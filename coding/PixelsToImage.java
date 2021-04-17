@@ -10,7 +10,7 @@ public class PixelsToImage {
         File textFile = new File("data.txt");
         Scanner scanner = new Scanner(textFile);
 
-        File imageFile = new File("cat-input.jpg");
+        File imageFile = new File("images/cat-input.jpg");
         BufferedImage img = ImageIO.read(imageFile);
 
         int red = 0;
@@ -29,7 +29,7 @@ public class PixelsToImage {
             }
         }
 
-        File outputFile = new File("cat-output.jpg");
+        File outputFile = new File("images/cat-output.jpg");
         ImageIO.write(img, "jpg", outputFile);
 
         scanner.close();

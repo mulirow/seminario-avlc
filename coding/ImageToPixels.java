@@ -10,7 +10,7 @@ public class ImageToPixels {
       FileWriter writer = new FileWriter("data.txt");
       
       //Reading the image
-      File file= new File("cat-input.jpg");
+      File file= new File("images/cat-input.jpg");
       BufferedImage img = ImageIO.read(file);
 
       for (int y = 0; y < img.getHeight(); y++) {

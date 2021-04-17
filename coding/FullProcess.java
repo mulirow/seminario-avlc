@@ -7,7 +7,7 @@ import javax.imageio.ImageIO;
 public class FullProcess {
     public static void main(String args[])throws Exception {   
         //Reading the image
-        File imageFile = new File("dot-input.jpg");
+        File imageFile = new File("images/dot-input.jpg");
         BufferedImage img = ImageIO.read(imageFile);
         BufferedImage tempImg = ImageIO.read(imageFile);
 
@@ -40,7 +40,7 @@ public class FullProcess {
             }
 
             //Outputting the final files
-            File outputFile = new File("dot-output" + i + ".jpg");
+            File outputFile = new File("images/dot-output" + i + ".jpg");
             ImageIO.write(img, "jpg", outputFile);    
             Thread.sleep(1000);
         }
