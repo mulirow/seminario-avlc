@@ -1,10 +1,11 @@
+package coding;
 import java.io.File;
 import java.awt.Color;
 import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
 import java.util.Scanner;
 
-public class pixelsToImage {
+public class PixelsToImage {
     public static void main(String args[]) throws Exception{
         File textFile = new File("data.txt");
         Scanner scanner = new Scanner(textFile);

@@ -1,10 +1,11 @@
+package coding;
 import java.io.File;
 import java.io.FileWriter;
 import java.awt.Color;
 import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
 
-public class imageToPixels {
+public class ImageToPixels {
    public static void main(String args[])throws Exception {
       FileWriter writer = new FileWriter("data.txt");
       
