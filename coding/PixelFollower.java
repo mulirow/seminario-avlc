@@ -19,10 +19,11 @@ public class PixelFollower {
         int iterations = scanner.nextInt();
         
         int pixelX = 29, pixelY = 32, flag = 0;
+        System.out.println("Posição inicial: x = " + pixelX + "        y = " + pixelY);
         for(int i = 0; i < iterations; i++){
             //Shearing (squared pxp images)
             int p = img.getHeight();
-            //T(x, y) = (x + y, y) mod p
+            //T(x, y) = (x + t * y, y) mod p
             for(int y = 0; y < p; y++){
                 for(int x = 0; x < p; x++){
                     int newX = (x + t * y) % p;
@@ -37,7 +38,7 @@ public class PixelFollower {
             }
             flag = 0;
 
-            //T(x, y) = (x, x + y) mod p
+            //T(x, y) = (x, x * t + y) mod p
             for(int y = 0; y < p; y++){
                 for(int x = 0; x < p; x++){
                     int newX = x % p;
