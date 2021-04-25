@@ -41,7 +41,8 @@ public class ArnoldSingle {
 
             //Outputting the final files
             File outputFile = new File("images/output/cat-output.jpg");
-            ImageIO.write(img, "jpg", outputFile);    
+            ImageIO.write(img, "jpg", outputFile);
+            System.out.println("Iteração: " + i);    
             Thread.sleep(1000);
         }
 
