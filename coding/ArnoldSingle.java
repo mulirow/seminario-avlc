@@ -4,10 +4,10 @@ import java.util.Scanner;
 import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
 
-public class FullProcess {
+public class ArnoldSingle {
     public static void main(String args[])throws Exception {   
         //Reading the image
-        File imageFile = new File("images/dot-input.jpg");
+        File imageFile = new File("images/input/cat.jpg");
         BufferedImage img = ImageIO.read(imageFile);
         BufferedImage tempImg = ImageIO.read(imageFile);
 
@@ -40,7 +40,7 @@ public class FullProcess {
             }
 
             //Outputting the final files
-            File outputFile = new File("images/dot-output" + i + ".jpg");
+            File outputFile = new File("images/output/cat-output.jpg");
             ImageIO.write(img, "jpg", outputFile);    
             Thread.sleep(1000);
         }
