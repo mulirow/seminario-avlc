@@ -54,7 +54,7 @@ public class PixelFollower {
             //Outputting the final file
             File outputFile = new File("../images/output/dot-output.png");
             ImageIO.write(img, "png", outputFile);    
-            System.out.println("Iteração: " + i + "       Posição: x = " + pixelX + "        y = " + pixelY);
+            System.out.println("Iteração: " + (i+1) + "       Posição: x = " + pixelX + "        y = " + pixelY);
             Thread.sleep(1000);
         }
 
