@@ -83,6 +83,7 @@ public class ArnoldMulti {
             //Outputting the final files
             File outputFile = new File("../images/output/cat-output-" + i + "-.png");
             ImageIO.write(img, "png", outputFile);    
+            System.out.print("Iteration " + (i+1) + "\n");
             Thread.sleep(1000);
         }
 
