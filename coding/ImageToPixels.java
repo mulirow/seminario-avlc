@@ -6,10 +6,10 @@ import javax.imageio.ImageIO;
 
 public class ImageToPixels {
    public static void main(String args[])throws Exception {
-      FileWriter writer = new FileWriter("data/output/dot-data.txt");
+      FileWriter writer = new FileWriter("../data/output/dot-data.txt");
       
       //Reading the image
-      File file= new File("images/input/dot.png");
+      File file= new File("../images/input/dot.png");
       BufferedImage img = ImageIO.read(file);
 
       for (int y = 0; y < img.getHeight(); y++) {

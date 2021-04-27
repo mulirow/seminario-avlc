@@ -6,7 +6,7 @@ import javax.imageio.ImageIO;
 public class ArnoldMulti {
     public static void main(String args[])throws Exception {   
         //Reading the image
-        File imageFile = new File("images/input/cat.png");
+        File imageFile = new File("../images/input/cat.png");
         BufferedImage img = ImageIO.read(imageFile);
         BufferedImage tempImg = ImageIO.read(imageFile);
         BufferedImage tempImg2 = ImageIO.read(imageFile);
@@ -81,7 +81,7 @@ public class ArnoldMulti {
             }
 
             //Outputting the final files
-            File outputFile = new File("images/output/cat-output-" + i + "-.png");
+            File outputFile = new File("../images/output/cat-output-" + i + "-.png");
             ImageIO.write(img, "png", outputFile);    
             Thread.sleep(1000);
         }

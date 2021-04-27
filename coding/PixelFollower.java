@@ -6,7 +6,7 @@ import javax.imageio.ImageIO;
 public class PixelFollower {
     public static void main(String args[])throws Exception {   
         //Reading the image
-        File imageFile = new File("images/input/dot.png");
+        File imageFile = new File("../images/input/dot.png");
         BufferedImage img = ImageIO.read(imageFile);
         BufferedImage tempImg = ImageIO.read(imageFile);
 
@@ -52,7 +52,7 @@ public class PixelFollower {
             flag = 0;
 
             //Outputting the final file
-            File outputFile = new File("images/output/dot-output.png");
+            File outputFile = new File("../images/output/dot-output.png");
             ImageIO.write(img, "png", outputFile);    
             System.out.println("Iteração: " + i + "       Posição: x = " + pixelX + "        y = " + pixelY);
             Thread.sleep(1000);

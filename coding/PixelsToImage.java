@@ -6,10 +6,10 @@ import java.util.Scanner;
 
 public class PixelsToImage {
     public static void main(String args[]) throws Exception{
-        File textFile = new File("data/output/cat-data.txt");
+        File textFile = new File("../data/output/cat-data.txt");
         Scanner scanner = new Scanner(textFile);
 
-        File imageFile = new File("images/input/cat.jpg");
+        File imageFile = new File("../images/input/cat.jpg");
         BufferedImage img = ImageIO.read(imageFile);
 
         int red = 0;
@@ -28,7 +28,7 @@ public class PixelsToImage {
             }
         }
 
-        File outputFile = new File("images/output/cat-output.jpg");
+        File outputFile = new File("../images/output/cat-output.jpg");
         ImageIO.write(img, "jpg", outputFile);
 
         scanner.close();
